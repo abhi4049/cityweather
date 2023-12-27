@@ -1,0 +1,95 @@
+*{
+    color: #fff;
+}
+body{
+    position: relative;
+    height: 90vh;
+}
+.card{
+    background: linear-gradient(60deg,red,navy, red);
+    width: 275px; 
+    height: fit-content;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    padding: 0px 10px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.search{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border: 0;
+   outline: 0;
+}
+.search input{
+    height: 35px;
+    margin: 15px 5px;
+    padding: 5px;
+    padding-left: 10px;;
+    color: black;
+    border-radius: 30px;
+    flex: 1;
+    font-size: 16px;
+    border: 2px solid black;
+}
+.search button{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #fff;
+    border: 2px solid black;
+}
+.search img{
+    padding-top: 2px;
+    width: 16px;
+    height: 16px;
+}
+#cityname{
+    height: 20px;
+}
+#maindetails{
+    flex-direction: column;
+}
+.details{
+    display: flex;  
+    align-items: center;
+    justify-content:center;
+}
+.col{
+    padding: 30px;
+    text-align: center;
+}
+#sky{
+    width: 100px;
+    height: 100px;
+}
+img{
+    width: 35px;
+    height: 35px;
+}
+@media (min-width: 280px) {
+    .card{
+        scale: 1;
+    }
+}
+@media (min-width: 481px) {
+    .card{
+        scale: 1.05;
+    }
+}
+@media (min-width: 769px) {
+    .card{
+        scale: 1.5;
+    }
+}
+@media (min-width: 1025px) {
+    .card{
+        scale: 1;
+    }
+}
